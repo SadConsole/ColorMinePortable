@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>ColorMineStandard</AssemblyName>
+    <Description>Recompiled https://github.com/muak/ColorMinePortable for .NET Standard 2.0</Description>
+    <PackageProjectUrl>https://github.com/SadConsole/ColorMinePortable</PackageProjectUrl>
+    <Copyright>SadConsole</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Recompiled https://github.com/muak/ColorMinePortable for .NET Standard 2.0</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Munsell.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Munsell.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
